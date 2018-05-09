@@ -1,4 +1,3 @@
-zuul.prefix:  /api
 zuul:
   prefix: /api
 #  ignored-services: "orgservice-new"

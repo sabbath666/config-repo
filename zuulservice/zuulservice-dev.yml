@@ -7,7 +7,8 @@ zuul:
 #   authenticationservice: /auth/**
   sensitiveHeaders: Authorization
   debug.request: true
-#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2
-#hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 2
-#licensingservice.ribbon.ReadTimeout: 2
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 15000
+#hystrix.command.licensingservice.execution.isolation.thread.timeoutInMilliseconds: 5000
+licensingservice.ribbon.ReadTimeout: 5000
+organizationservice.ribbon.ReadTimeout: 5000
 signing.key: "345345fsdfsf5345"
